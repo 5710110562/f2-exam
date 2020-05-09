@@ -1,13 +1,13 @@
 public class Cuboid extends Shape implements AreaCalculable,VolumeCalculable {
     public double width;
     public double height;
-    public double length;
+    public double lenght;
 
-    public Rectangle(String name, double width, double height, double length){
+    public Cuboid(String name, double width, double height, double lenght){
         super(name);
         this.width = width;
         this.height = height;
-        this.length = length;
+        this.lenght = lenght;
     }
 
     public double getWidth(){
@@ -26,41 +26,27 @@ public class Cuboid extends Shape implements AreaCalculable,VolumeCalculable {
         this.height = height;
     }
     
-    public double getlength(){
-        return length;
+    public double getlenght(){
+        return lenght;
     }
 
-    public void setHeight(double length){
-        this.length = length;
+    public void setLenght(double lenght){
+        this.lenght = lenght;
     }
     public double getArea(){
-		return width * height * length;
+		return (2*height)*(lenght + width);
     }
-    
+    public double getVolume(){
+        return width * height * lenght;
+    }
 
 	public void zoom(double factor){
 		width = width * factor;
         height = height * factor;
-        length = length * factor;
+        lenght = lenght * factor;
     }
 
-
-
-
-
-
-
-
-    public double getArea(){
-        return width * height;
-    }
-
-    public void zoom(double factor){
-        width = width * factor;
-        height = height * factor;
-    }
-
-
+/*
 
 
 
@@ -76,4 +62,5 @@ public int splitString(String key){
         }
 
     }
+*/
 }
