@@ -16,16 +16,14 @@ public class GuiFinal{
 
 class MyFrame extends JFrame {
 	private JLabel label;
-	private Counter counter;
 
 	public MyFrame(String title){
 		super(title);
 		
 		this.getContentPane().setLayout(new BorderLayout());
 
-		counter = new Counter();
 
-		label = new JLabel("" + counter.getValue());
+		label = new JLabel("");
 		label.setFont(label.getFont().deriveFont(18.0f));
 		this.add(label, BorderLayout.PAGE_START);
 
