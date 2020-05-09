@@ -1,3 +1,7 @@
 public interface Zoomable {
-	void zoom(double factor);
+    void zoom(double factor);
+    
+
+
+    
 }
