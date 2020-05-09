@@ -1,4 +1,4 @@
-public class Sphere extends Shape implements AreaCalculable,VolumeCalculable {
+public class Sphere extends Shape implements AreaCalculable, VolumeCalculable {
     public double radius;
 
     public Sphere(String name, double radius){
