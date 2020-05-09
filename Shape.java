@@ -1,4 +1,4 @@
-public abstract class Shape {
+public abstract class Shape implements Zoomable {
     public String name;
 
     public Shape(String name){

@@ -1,4 +1,4 @@
-public class Circle extends Shape implements AreaCalculable, Zoomable{
+public class Circle extends Shape implements AreaCalculable{
     public double radius;
 
     public Circle(String name, double radius){

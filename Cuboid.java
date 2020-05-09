@@ -1,6 +1,7 @@
-public class Cuboid extends Shape{
+public class Cuboid extends Shape implements AreaCalculable,VolumeCalculable {
     public double width;
     public double height;
+    public double length;
 
     public Rectangle(String name, double width, double height, double length){
         super(name);
@@ -24,6 +25,31 @@ public class Cuboid extends Shape{
     public void setHeight(double height){
         this.height = height;
     }
+    
+    public double getlength(){
+        return length;
+    }
+
+    public void setHeight(double length){
+        this.length = length;
+    }
+    public double getArea(){
+		return width * height * length;
+    }
+    
+
+	public void zoom(double factor){
+		width = width * factor;
+        height = height * factor;
+        length = length * factor;
+    }
+
+
+
+
+
+
+
 
     public double getArea(){
         return width * height;
