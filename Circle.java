@@ -19,7 +19,14 @@ public class Circle extends Shape implements AreaCalculable{
         int total = 0;
         Scanner sc = new Scanner(new File("data.txt"));
         while(sc.hashNextLine()){
-            
+            String line = sc.nextLine();
+            String items = line.splt(" ");
+            if(item[0].equals(key)){
+                
+                return total;
+            }
+
+
         }
     }
    
