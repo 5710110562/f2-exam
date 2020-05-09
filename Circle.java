@@ -15,7 +15,13 @@ public class Circle extends Shape implements AreaCalculable{
 	public void zoom(double factor){
 		radius = radius * factor;
     }
-    public 
+    public int splitString(String){
+        int total = 0;
+        Scanner sc = new Scanner(new File("data.txt"));
+        while(sc.hashNextLine()){
+            
+        }
+    }
    
     
 }
