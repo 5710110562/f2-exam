@@ -5,7 +5,16 @@ public class Circle extends Shape implements AreaCalculable{
         super(name);
         this.radius;
     }
+    public void setRadius(double radius){
+        this.radius = radius;
+    }
+    public double getArea(){
+		return Math.PI * radius * radius;
+	}
 
+	public void zoom(double factor){
+		radius = radius * factor;
+	}
 
     
 }
