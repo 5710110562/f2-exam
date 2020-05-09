@@ -1,9 +1,9 @@
-public class Circle extends Shape implements AreaCalculable{
+public class Circle extends Shape implements AreaCalculable, Zoomable{
     public double radius;
 
     public Circle(String name, double radius){
         super(name);
-        this.radius;
+        this.radius = radius;
     }
     public void setRadius(double radius){
         this.radius = radius;
@@ -15,20 +15,6 @@ public class Circle extends Shape implements AreaCalculable{
 	public void zoom(double factor){
 		radius = radius * factor;
     }
-    public int splitString(String){
-        int total = 0;
-        Scanner sc = new Scanner(new File("data.txt"));
-        while(sc.hashNextLine()){
-            String line = sc.nextLine();
-            String items = line.splt(" ");
-            if(item[0].equals(key)){
-                
-                return total;
-            }
 
-
-        }
-    }
-   
     
 }

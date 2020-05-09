@@ -1,4 +1,4 @@
-public class Rectangle extends Shape {	
+public class Rectangle extends Shape implements AreaCalculable, Zoomable{	
 	private double width;
 	private double height;
 
@@ -32,4 +32,5 @@ public class Rectangle extends Shape {
 		width = width * factor;
 		height = height * factor;
     }
+    
 }
