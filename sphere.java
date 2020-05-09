@@ -1,7 +1,7 @@
-public class Shpere extends Shape implements AreaCalculable,VolumeCalculable {
+public class Sphere extends Shape implements AreaCalculable,VolumeCalculable {
     public double radius;
 
-    public Shpere(String name, double radius){
+    public Sphere(String name, double radius){
         super(name);
         this.radius = radius;
     }
